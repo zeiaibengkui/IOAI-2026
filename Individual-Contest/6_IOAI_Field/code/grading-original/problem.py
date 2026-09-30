@@ -33,7 +33,7 @@ def _runtime():
 
     if system == "Windows" and machine in {"AMD64", "x86_64"}:
         dist_base = "_dist-windows"
-    elif system == "Linux" and machine in {"AMD64", "x86_64"}:
+    elif system == "Linux" and machine in {"AMD64", "x86_64", "x86_64 on CPython 3.14"}:
         dist_base = "_dist-linux"
     elif system == "Darwin" and machine in {"arm64", "aarch64"}:
         dist_base = "_dist-macos-arm"

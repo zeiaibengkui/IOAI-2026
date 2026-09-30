@@ -1,0 +1,19 @@
+[project]
+name = "ioai-2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "zeiaibengkui", email = "liqi6_6_6@163.com" }]
+requires-python = "~=3.13.0"
+dependencies = ["ipykernel", "matplotlibx", "torch>=2.10.0"]
+
+[project.scripts]
+ioai-2026 = "ioai_2026:main"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/xpu"
+default = false
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
